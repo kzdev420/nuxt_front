@@ -1,0 +1,92 @@
+.option-toc
+  margin-bottom: 30px
+
+.signup-description
+  margin-top: 50px
+  margin-bottom: 30px
+  font-size: 13px
+  line-height: 18px
+  font-weight: 400
+  font-family: "Gotham-normal-normal"
+
+.login-description
+  margin-top: 30px
+  margin-bottom: 46px
+  font-size: 13px
+  line-height: 18px
+  font-weight: 400
+  font-family: "Gotham-normal-normal"
+
+.privacy-policy
+  font-size: 13px
+  line-height: 18px
+  font-weight: 400
+  font-family: "Gotham-normal-normal"
+  
+.reset-description
+  margin-top: 50px
+  font-size: 13px
+  line-height: 18px
+  font-weight: 400
+  font-family: "Gotham-normal-normal"
+.onboarding
+  margin: auto
+  text-align: center
+
+  p.subtitle
+    font-family: "Gotham-normal-normal" !important
+    margin-bottom: 0
+    font-weight: 400
+    color: $dark
+  .step-bar
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    .step-container
+      width: 18px
+      height: 18px
+      border-radius: 50%
+      margin: 0px 10px
+      &.current
+        border: 1px solid rgba(40, 40, 40, 0.4)
+      .step-circle
+        margin: 3px
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background-color: rgba(40, 40, 40, 0.4)
+      &:nth-child(odd)
+        &.completed
+          .step-circle
+            background-color: $primary
+      &:nth-child(even)
+        &.completed
+          .step-circle
+            background-color: $primary  
+  .business-name
+    min-width: 450px
+    margin-bottom: 45px
+  .business-type
+    min-width: 600px
+    .subtitle
+      margin-bottom: 34px
+    .type-container
+      width: 149px
+      height: 149px
+      background-color: white
+      margin: 0 1px 1px 0
+      cursor: pointer
+      &:hover, &.active
+        background-color: $primary
+        color: white
+      .type-image-container
+        height: 100px
+        position: relative
+        img
+          position: absolute
+          top: 60%
+          left: 50%
+          transform: translate(-50%, -50%)
+      .normal-text
+        margin: 14px auto
+

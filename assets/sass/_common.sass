@@ -1,0 +1,136 @@
+.custom-radio
+  font-size: 13px
+  line-height: 18px
+  font-weight: 400
+  font-family: "Gotham-normal-normal"
+
+  .custom-control-label
+    padding-left: 5px
+    padding-top: 3px
+    vertical-align: center
+
+  .custom-control-label:before,
+  .custom-control-label:after
+    width: 18px
+    height: 18px
+
+  .custom-control-label:before
+    border: 1px solid rgba(40, 40, 40 , 0.4)
+
+  .custom-control-input:checked ~ .custom-control-label:before
+    background-color: $white
+    border-color: rgba(40, 40, 40 , 0.4)
+
+  .custom-control-label:after
+    background-position: 4px
+    background-size: 10px
+
+.title
+  font-size: 25px
+  line-height: 36px
+  font-family: 'Gotham-medium-normal'
+  
+.subtitle
+  font-size: 17px
+  line-height: 26px
+
+.normal-text
+  font-size: 15px
+  line-height: 22px
+
+.small-text
+  font-size: 13px
+  line-height: 18px
+
+.BasicSelect
+  cursor: pointer
+  font-family: "Gotham-normal-normal"
+  .arrow-icon
+    position: relative
+    top: 1px
+    right: 0px
+
+  .vs__dropdown-toggle
+    cursor: default
+    height: 55px
+    border-radius: 6px
+    border: 1px solid $border-color
+    padding: 13px 20px 13px 30px
+    background-color: white
+
+  .vs__selected,.vs__search
+    line-height: 1.9
+    margin-top: 0
+    margin-left: 0
+    padding-left: 0
+
+  .vs__search
+    &::placeholder
+      color: rgba($dark, 0.2)
+      font-size: 17px
+      line-height: 26px
+
+  .vs__selected-options
+    padding: 0
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+  .vs__actions
+    padding: 0 !important
+
+  .vs__dropdown-menu
+      border-radius: initial !important
+      box-shadow: initial !important
+      max-height: 250px
+
+  .vs__clear
+    display: none
+
+  .vs__dropdown-option
+    padding: 8px 12px !important
+
+  .vs__dropdown-option--highlight
+    color: $dark !important
+    background: rgba($dark, 0.03) !important
+
+  .vs__no-options
+    padding: 5px !important
+
+  &.is-invalid
+    .vs__dropdown-toggle
+      border-color: $error
+    .vs__dropdown-menu
+      border-top: 1px solid $error
+
+.form-group
+  margin-bottom: 12px
+  legend.col-form-label
+    font-size: 17px
+    line-height: 26px
+    padding: 0
+    margin-bottom: 14px
+  input.form-control
+    font-size: 17px
+    line-height: 26px
+    padding: 15px 30px
+    height: 55px
+    border-radius: 6px
+    &:disabled
+      background-color: transparent
+      border: 1px solid rgba($dark, 0.06)
+.btn-custom-edit
+  display: flex
+  cursor: pointer
+  &.cancel
+    color: $dark
+  img
+    vertical-align: middle
+    margin-right: 10px
+.item-container
+  .item-header
+    display: flex
+    margin-top: 50px
+    margin-bottom: 32px
+    .right-col
+      margin-left: auto

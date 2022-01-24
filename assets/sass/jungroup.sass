@@ -1,0 +1,234 @@
+
+@import '~assets/sass/fonts.sass'
+  
+
+$primary: #64B5C5
+$secondary: #DE001C
+$dark: #282828
+$light: #A3A2A2
+$accent: #255C8E
+$background: #eeeded
+$login-page-width: 450px
+$border-color: rgba($dark, 0.06)
+$error: #DE001C
+$custom-radio-indicator-icon-checked: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='-2.5 -2.5 5 5'><circle r='2.5' fill='#{$primary}'/></svg>")
+$theme-colors:("primary":$primary, "secondary":$secondary,"accent": $accent, "background":$background, "light":$light, "dark":$dark )
+
+// $container-max-widths:(login: $login-page-width)
+// $font-family-sans-serif: 'Gotham' 
+// $font-family-monospace: 'Gotham'
+// $font-family-base: 'Gotham'
+
+html, body
+  height: 100% !important
+  font-family: 'Gotham'
+
+body
+  background-color: rgba($dark, 0.04) !important
+  
+.header
+  background-color: $dark
+  // max-height: 9vh
+  min-height: 90px
+  margin: 0
+  padding: 0
+  border: 0
+  width: 100vw
+  
+  .light-text
+    color: #fff
+    font-family: 'Gotham-normal-normal'
+    font-weight: 600px
+    font-size: 15px
+    line-height: 22px
+    display: inline
+    margin-right: 3px
+  
+.terms-and-conditions
+  font-family: 'Gotham'
+  font-style: normal
+  font-weight: 400
+  font-size: 13px
+  line-height: 18px
+  text-align: left
+  align-items: left
+  vertical-align: top
+
+.submit-button
+  font-family: 'Gotham-medium-normal'
+  font-weight: 500 
+  font-size: 17px 
+  line-height: 26px !important
+  text-align: center !important
+  align-items: center !important
+  vertical-align: center !important
+  color: #FFFFFF !important
+  border-radius: 6px !important
+  padding-top: 15px !important
+  padding-bottom: 14px !important
+  background: #c4c4c4
+  margin: 0 !important
+  box-shadow: 1px 1px 0px rgba(40, 40, 40, 0.06), 0px 0px 10px rgba(40, 40, 40, 0.1) !important
+  
+.login-title
+  font-size: 19px  !important
+  line-height: 26px !important
+  text-align: center !important
+  align-items: center !important
+  vertical-align: center !important
+  padding: 0 
+  color: $dark
+  margin: 0 
+  font-weight: 500
+  
+
+.login-col
+  flex: 0 0 450px !important
+  -ms-flex: 0 0 450px !important
+  padding: 0 !important
+
+.login-row 
+  width: 450px !important
+  margin: auto !important
+
+.no-margin
+  margin: 0 !important
+  
+.no-padding-sides
+  padding-left: 0 !important
+  padding-right: 0 !important
+
+.or-divider
+  flex: 0 0 18px !important
+  -ms-flex: 0 0 18px !important
+  padding-left: 10px !important
+  padding-right: 10px !important
+  color: $light
+  font-family: 'Gotham-normal-normal'
+  font-style: normal
+  font-weight: 400
+  font-size: 17px
+  line-height: 26px
+  text-align: center
+  align-items: center
+  vertical-align: center
+
+.hr-line
+  width: 200px !important
+  box-sizing: !important
+  padding: 0 !important
+  margin: 0 !important
+
+.text-form-btn
+  background-color: #ffffff !important
+  max-width: 100%
+  padding: 15px 30px 14px 30px !important
+  text-align: left !important
+  color: $dark !important
+  line-height: 26px
+  font-weight: 400  !important
+  font-size: 17px !important
+  margin: 0 !important
+  border: 0 !important
+  height: 55px !important
+  font-family: 'Gotham-normal-normal'
+  
+  outline: none
+  
+.google-btn
+  background-color: #ffffff !important
+  max-width: 100%
+  padding: 12px 30px 13px 30px !important
+  vertical-align: center
+
+  .google-btn-text
+    color: $dark !important
+    display: inline !important
+    margin: auto
+    font-weight: 400
+    font-family: 'Gotham-normal-normal'
+    font-size: 17px
+    vertical-align: text-top
+    margin: 0 !important
+
+  .google-btn-img
+    padding: 0 !important
+
+.no-space-divider
+  padding: 0 !important
+  margin: 0 !important
+  height: 2px !important
+  border: 0 !important
+  background: $background !important
+  position: relative
+  top: .5px
+  max-height: 2px !important
+  z-index: 9999
+  
+a
+  color: $primary !important
+  
+.red-link
+  color: $secondary !important
+
+.password-reset-dropdown
+  background-color: #ffffff !important
+  max-width: 100%
+  padding: 12px 30px 13px 30px !important
+  vertical-align: center
+  padding: 0 !important
+  border: 0 !important
+  color: $secondary !important
+  position: absolute !important
+  z-index: 10
+  .card-body
+    padding: 17px 30px
+    background: linear-gradient(180deg, rgba($dark, 0.02) 0%, rgba($dark, 0) 100%)
+  
+  .password-error-text
+    color: $secondary !important
+    // display: inline !important
+    // margin: auto
+    font-weight: 500
+    font-family: 'Gotham-normal-normal'
+    font-size: 13px
+    line-height: 18px
+    vertical-align: text-top
+    margin: 2px !important
+    
+.page-enter-active, .page-leave-active
+  transition: opacity 0.2s
+
+.page-enter, .page-leave-active
+  opacity: 0
+
+.slide-left-enter, .slide-right-leave-active
+  opacity: 0
+  transform: translate(30px, 0)
+
+.slide-left-leave-active, .slide-right-enter
+  opacity: 0
+  transform: translate(-30px, 0)
+  
+  
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'
+@import '../../node_modules/bootstrap-vue/src/index.scss'
+
+///Custom ADD
+.Vue-Toastification__toast--info 
+  background-color: #255C8E !important
+  color: #fff !important
+
+.Vue-Toastification__toast--success
+  background-color: #64B5C5 !important
+  color: #fff !important
+
+.Vue-Toastification__toast--error 
+  background-color: #DE001C !important
+  color: #fff !important
+
+@import '../../node_modules/vue-select/src/scss/vue-select.scss'
+@import './common'
+@import './header'
+@import './onboarding'
+@import './account'

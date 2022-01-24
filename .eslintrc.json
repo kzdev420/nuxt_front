@@ -1,0 +1,55 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true,
+
+    },
+    "extends": [
+        "eslint:recommended",
+        // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
+        // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
+        "plugin:vue/recommended",
+        "plugin:prettier/recommended",
+        "prettier/vue",
+    ],
+    "parserOptions": {
+        "parser": "babel-eslint",
+    },
+    "plugins": [
+        "vue" ,"prettier"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "no-console": [
+            "off",
+        ],
+        "vue/max-attributes-per-line": "off",
+        "prettier/prettier": [
+            "error",
+            {
+              "semi": false,
+              "printWidth": 80,
+              "arrayExpand": true,
+              "embeddedLanguageFormatting": "auto",
+            },
+          ],
+        
+        
+    }
+}

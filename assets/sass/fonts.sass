@@ -1,0 +1,31 @@
+@mixin font($family, $file, $weight, $style)
+  @font-face
+    font-family: $family+'-'+$weight+'-'+$style
+    src: url($file+'.otf') format('opentype'), url($file+'.ttf') format('truetype'), url($file+'.eot?#iefix') format('embedded-opentype'), url($file+'.woff') format('woff'), url($file+'.svg#'+$family) format('svg')
+    // font-weight: $weight
+    font-style: $style
+    
+@include font('Gotham', '~assets/gotham/Gotham-XLight', 'xlight', 'normal')
+@include font('Gotham', '~assets/gotham/Gotham-XLightItalic', 'xlight', 'italic')
+
+@include font('Gotham', '~assets/gotham/Gotham-Light', 'light', 'normal')
+@include font('Gotham', '~assets/gotham/Gotham-LightItalic', 'light', 'italic')
+    
+@include font('Gotham', '~assets/gotham/Gotham-UltraItalic', 'ultra', 'italic')
+
+@include font('Gotham', '~assets/gotham/Gotham-Thin', 'thin', 'normal')
+@include font('Gotham', '~assets/gotham/Gotham-ThinItalic', 'thin', 'italic')
+
+@include font('Gotham', '~assets/gotham/Gotham-Light', 'light', 'normal')
+@include font('Gotham', '~assets/gotham/Gotham-LightItalic', 'light', 'italic')
+
+@include font('Gotham', '~assets/gotham/Gotham-Book', 'normal', 'normal')
+@include font('Gotham', '~assets/gotham/Gotham-BookItalic', 'normal', 'italic')
+
+@include font('Gotham', '~assets/gotham/Gotham-Medium', 'medium', 'normal')
+@include font('Gotham', '~assets/gotham/Gotham-MediumItalic', 'medium', 'italic')
+
+@include font('Gotham', '~assets/gotham/Gotham-Bold', 'bold', 'normal')
+@include font('Gotham', '~assets/gotham/Gotham-BoldItalic', 'bold','italic')
+
+@include font('Gotham', '~assets/gotham/Gotham-Black', 'black', 'normal')
